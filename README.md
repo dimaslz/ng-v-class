@@ -1,27 +1,97 @@
 # NgVClass
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+Angular directive to have a flexible "ngClass" as Vue style but in Angular.
 
-## Development server
+* This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Why?
 
-## Code scaffolding
+Under my experience, as I have worked with Vue with dynamic classes has a better flexibility to work with directly in the template.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For example, in Angular, you can use Object, String or Array but just easy way...
 
-## Build
+```html
+<!-- example of ngClass in Angular -->
+<some-element [ngClass]="'first second'">...</some-element>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<some-element [ngClass]="['first', 'second']">...</some-element>
 
-## Running unit tests
+<some-element [ngClass]="{'first': true, 'second': true, 'third': false}"
+  >...</some-element
+>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<some-element [ngClass]="stringExp|arrayExp|objExp">...</some-element>
 
-## Running end-to-end tests
+<some-element [ngClass]="{'class1 class2 class3' : true}">...</some-element>
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+... for example, you can not combine different types in one expression
 
-## Further help
+```html
+<some-element [ngClass]="[activeClass ? 'class1' : 'class2', {'class5': true}]"
+  >...</some-element
+>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<!-- ERROR Error: NgClass can only toggle CSS classes expressed as strings, got [object Object] -->
+```
+
+...however in vue, you can do the same and also, combine both...
+
+```html
+<!-- example of :class in Vue -->
+<some-element
+  :class="[
+    'first second',
+    {'first': true, 'second': false},
+    ['class1', 'class2', 'class3'],
+    someValue ? 'classA' : 'classB',
+    [
+      someValue ? 'classA' : 'classB', 'class2', 'class3', ['other']
+    ],
+  ]"
+  >...</some-element
+>
+```
+
+... so, infinit combinations that sometimes could help us.
+
+Then, with this package you can use the same syntax as in Vue with `:class`, now in Angular with `[ngVClass]`.
+
+```html
+<!-- example of ngVClass (this package) in Angular -->
+<some-element
+  [ngVClass]="[
+    'first second',
+    {'first': true, 'second': false},
+    ['class1', 'class2', 'class3'],
+    someValue ? 'classA' : 'classB',
+    [
+      someValue ? 'classA' : 'classB', 'class2', 'class3', ['other']
+    ],
+  ]"
+  >...</some-element
+>
+```
+
+## TODO (soon...)
+
+- [ ] Add more examples
+- [ ] Add tests
+- [ ] Publish NPM package
+
+## Feedback
+
+Please, feel free to give feedback or just ping me (by twitter or linkedin) if you think if also it is a good idea and helpful for you. Stars this repo also helps to get motivation :).
+
+## Author
+
+```js
+{
+	name: "Dimas López",
+	role: "FullStack Software development",
+	alias: "dimaslz",
+	twitter: "https://twitter.com/dimaslz",
+	site: "https://dimaslz.dev",
+	linkedin: "https://www.linkedin.com/in/dimaslopezzurita"
+}
+```

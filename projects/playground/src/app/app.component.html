@@ -1,0 +1,88 @@
+
+<div
+  class="ForkMeOnGithub fixed top-0 right-0 mt-10 -mr-12 transform rotate-45 bg-gray-900 z-10"
+>
+  <a
+    href="https://github.com/dimaslz/ng-v-class"
+    target="_blank"
+    class="flex text-gray-300 hover:text-gray-100 px-10 py-1 border border-white my-1 border-dashed"
+    >Fork me on GitHub</a
+  >
+</div>
+
+<div class="flex flex-col">
+  <section class="container my-0 mx-auto px-4 h-full flex flex-col">
+    <darkmode-toggle></darkmode-toggle>
+
+    <div class="Header flex flex-col items-center">
+      <div>
+        <app-icon [size]="256"></app-icon>
+      </div>
+      <h1 class="text-6xl mb-6 dark:text-gray-200">ng-v-class</h1>
+
+      <div class="Header__install">
+        <code
+          class="dark:text-gray-900 text-gray-400 flex text-sm rounded shadow-inner cursor-pointer relative"
+          [ngClass]="{
+            'bg-gray-900 hover:bg-gray-700 dark:bg-gray-200 dark:hover:bg-gray-100': !copied
+          }"
+        >
+          <div
+            *ngIf="copied"
+            class="p-4 rounded absolute inset-0 w-full h-full z-10 bg-green-600 text-white flex items-center justify-center"
+          >command copied to clipboard</div>
+          <div
+            (click)="onClickCommandExample($event)"
+            class="rounded w-full h-full z-0 flex items-center justify-center p-4">
+            $ yarn add @dimaslz/ng-v-class
+          </div>
+        </code>
+      </div>
+    </div>
+
+    <h2 class="text-center my-4 text-lg font-light dark:text-white">
+      Directive to use Vue class expression in Angular.
+    </h2>
+
+    <code-presentation
+      title="Example with ngClass"
+      [snippets]="[
+        { type: 'html', code: examples.angular }
+      ]"
+    ></code-presentation>
+
+    <code-presentation
+      title="Example of limits of ngClass"
+      [snippets]="[
+        { type: 'html', code: examples.angularLimits }
+      ]"
+      description="Angular just allow use string results in the expressions, if you want to compute various types as an array where inside there is other array of string for example, you can not do it."
+    ></code-presentation>
+
+    <code-presentation
+      title="Example with [ngVClass] directive"
+      [snippets]="[
+        { type: 'html', code: examples.ngVClass }
+      ]"
+    ></code-presentation>
+
+    <code-presentation
+      title="If you want to compute the value and just assing in a variable to use in a ngClass"
+      [snippets]="[
+        { type: 'typescript', code: examples.programaticallyCode },
+        { type: 'html', code: examples.programaticallyHtml }
+      ]"
+    ></code-presentation>
+
+    <code-presentation
+      title="Installation"
+      [snippets]="[
+        { type: 'typescript', code: install },
+      ]"
+    ></code-presentation>
+  </section>
+
+  <footer class="relative mt-4 p-8 text-xs dark:text-white text-gray-800">
+    Made with ♥ from Barcelona by <a href="https://twitter.com/dimaslz" class="text-blue-500 hover:text-blue-400">@dimaslz</a> to the <span class="text-red-700 font-semibold">Angular</span> community | {{ date }}
+  </footer>
+</div>
