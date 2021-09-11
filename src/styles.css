@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+.class1 {
+  color: red;
+}
+
+.class2 {
+  color: green;
+}
+
+.class3 {
+  color: blue;
+}
+
+.class4 {
+  color: yellow;
+}
+
+.class5 {
+  color: purple;
+}

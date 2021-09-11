@@ -1,0 +1,47 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>VClass</h1>
+  <pre vClass="class1">vClass="class1"</pre>
+  <pre [vClass]="['class1', 'class2']">[vClass]="['class1', 'class2']"</pre>
+  <pre [vClass]="{ class1: true, class2: false }">
+      {{ '[vClass]="{ class1: true, class2: false }"' }}
+  </pre>
+
+  <div
+    [vClass]="['class1', { 'class2 classX': true, class3: false }, ['class4', [{ class5: true }]]]"
+  >
+    {{ '[vClass]="[\'class1\', { \'class2 classX\': true, class3: false },
+    [\'class4\', [{ class5: true }]]]"' }}
+  </div>
+
+  <button (click)="addClass('class1')">class1</button>
+  <button (click)="addClass('class2')">class2</button>
+  <button (click)="addClass('class3')">class3</button>
+  <div [vClass]="dynamicClass">
+    dynamicClass {{ dynamicClass }}
+  </div>
+
+  <h1>ngClass</h1>
+  <pre ngClass="class1">ngClass="class1"</pre>
+  <pre [ngClass]="['class1', 'class2']">
+{{ '[ngClass]="[\'class1\', \'class2\']"' }}</pre
+  >
+  <pre [ngClass]="{ class1: true, class2: false }">
+      {{ '[ngClass]="{ class1: true, class2: false }"' }}
+  </pre>
+  <pre>
+    {{ '[ngClass]="[\'class1\', { \'class2 classX\': true, class3: false },
+    [\'class4\', [{ class5: true }]]]"' }}
+
+    <code style="color: red; font-weight: 800; font-size: 20px">
+      NO POSSIBLE
+    </code>
+    <code>
+      ERROR Error: NgClass can only toggle CSS classes expressed as strings, got
+      [object Object]
+    </code>
+  </pre>
+  <!--
+  
+  -->
+</div>
