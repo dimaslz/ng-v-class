@@ -3,6 +3,10 @@
   <h1>VClass</h1>
   <pre vClass="class1">vClass="class1"</pre>
   <pre [vClass]="['class1', 'class2']">[vClass]="['class1', 'class2']"</pre>
+  <button (click)="activeClass = !activeClass">toggle</button>
+  <pre [vClass]="activeClass ? 'class1' : 'class2'">
+[vClass]="{{activeClass}} ? 'class1' : ''"</pre
+  >
   <pre [vClass]="{ class1: true, class2: false }">
       {{ '[vClass]="{ class1: true, class2: false }"' }}
   </pre>
@@ -28,6 +32,11 @@
   >
   <pre [ngClass]="{ class1: true, class2: false }">
       {{ '[ngClass]="{ class1: true, class2: false }"' }}
+  </pre>
+
+  <button (click)="activeClass = !activeClass">toggle</button>
+  <pre [ngClass]="activeClass ? 'class1' : 'class2'">
+      [vClass]="{{activeClass}} ? 'class1' : ''"
   </pre>
   <pre>
     {{ '[ngClass]="[\'class1\', { \'class2 classX\': true, class3: false },

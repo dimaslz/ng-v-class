@@ -7,6 +7,7 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   dynamicClass = [];
+  activeClass = true;
 
   addClass(c: any) {
     this.dynamicClass = this.dynamicClass.concat([c]);
