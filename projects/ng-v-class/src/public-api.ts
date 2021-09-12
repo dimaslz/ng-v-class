@@ -3,4 +3,5 @@
  */
 
 export * from './lib/ng-v-class.util';
+export * from './lib/ng-v-class.directive';
 export * from './lib/ng-v-class.module';

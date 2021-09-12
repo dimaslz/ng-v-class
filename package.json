@@ -37,6 +37,8 @@
     "@angular-eslint/template-parser": "^12.4.1",
     "@angular/cli": "~12.2.5",
     "@angular/compiler-cli": "~12.2.0",
+    "@release-it/bumper": "^3.0.1",
+    "@release-it/conventional-changelog": "^3.3.0",
     "@testing-library/angular": "^10.11.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/highlight.js": "^10.1.0",
