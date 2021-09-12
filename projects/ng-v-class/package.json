@@ -1,6 +1,11 @@
 {
   "name": "@dimaslz/ng-v-class",
   "version": "0.0.2",
+  "author": "Dimas López <me@dimaslz.io> (dimaslz)",
+  "repository": {
+    "url": "git+https://github.com/dimaslz/ng-v-class.git",
+    "type": "git"
+  },
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0"
@@ -11,5 +16,16 @@
     "@types/lodash.isequal": "^4.5.5",
     "lodash.isarray": "^4.0.0",
     "lodash.isequal": "^4.5.0"
-  }
+  },
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "vue",
+    "library",
+    "directive"
+  ],
+  "bugs": {
+    "url": "https://github.com/dimaslz/ng-v-class/issues"
+  },
+  "homepage": "https://github.com/dimaslz/ng-v-class#readme"
 }
