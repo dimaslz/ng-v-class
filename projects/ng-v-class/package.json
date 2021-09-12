@@ -6,6 +6,10 @@
     "@angular/core": "^12.2.0"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "@types/lodash.isarray": "^4.0.6",
+    "@types/lodash.isequal": "^4.5.5",
+    "lodash.isarray": "^4.0.0",
+    "lodash.isequal": "^4.5.0"
   }
 }
