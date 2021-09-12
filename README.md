@@ -1,8 +1,45 @@
-# NgVClass
+# @dimaslz/ng-v-class
 
 Angular directive to have a flexible "ngClass" as Vue style but in Angular.
 
 * This project was generated with [Angular CLI](https://github.com/angular/angular-cli).
+
+## Installation
+
+npm: `npm install @dimaslz/ng-v-class`
+
+yarn: `yarn add @dimaslz/ng-v-class`
+
+### In your module where you want to use this directive
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgVClassModule } from '@dimaslz/ng-v-class';
+// or: import NgVClassModule from '@dimaslz/ng-v-class';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    NgVClassModule,
+    ...
+  ],
+  ...
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+```
+
+### In your template
+```html
+<some-element [ngVClass]="expression">...</some-element>
+```
 
 ## Why?
 
@@ -16,9 +53,9 @@ For example, in Angular, you can use Object, String or Array but just easy way..
 
 <some-element [ngClass]="['first', 'second']">...</some-element>
 
-<some-element [ngClass]="{'first': true, 'second': true, 'third': false}"
-  >...</some-element
->
+<some-element
+  [ngClass]="{'first': true, 'second': true, 'third': false}"
+>...</some-element>
 
 <some-element [ngClass]="stringExp|arrayExp|objExp">...</some-element>
 
@@ -28,9 +65,9 @@ For example, in Angular, you can use Object, String or Array but just easy way..
 ... for example, you can not combine different types in one expression
 
 ```html
-<some-element [ngClass]="[activeClass ? 'class1' : 'class2', {'class5': true}]"
-  >...</some-element
->
+<some-element
+  [ngClass]="[activeClass ? 'class1' : 'class2', {'class5': true}]"
+>...</some-element>
 
 <!-- ERROR Error: NgClass can only toggle CSS classes expressed as strings, got [object Object] -->
 ```
@@ -49,8 +86,7 @@ For example, in Angular, you can use Object, String or Array but just easy way..
       someValue ? 'classA' : 'classB', 'class2', 'class3', ['other']
     ],
   ]"
-  >...</some-element
->
+>...</some-element>
 ```
 
 ... so, infinit combinations that sometimes could help us.
@@ -69,15 +105,8 @@ Then, with this package you can use the same syntax as in Vue with `:class`, now
       someValue ? 'classA' : 'classB', 'class2', 'class3', ['other']
     ],
   ]"
-  >...</some-element
->
+>...</some-element>
 ```
-
-## TODO (soon...)
-
-- [ ] Add more examples
-- [ ] Add tests
-- [ ] Publish NPM package
 
 ## Feedback
 
