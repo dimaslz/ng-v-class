@@ -1301,10 +1301,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@dimaslz/ng-heroicons@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@dimaslz/ng-heroicons/-/ng-heroicons-0.1.2.tgz#1a97c1c4c888db495adaa67c93a726023ab16b07"
-  integrity sha512-PRZ9aewObnenksM7mtqOzMr0nukYxmGISdgVgq+36H7VIAYDmOEMBtFUzGXiT/jXNTrEhD/zkjURDciCK66yFg==
+"@dimaslz/ng-heroicons@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@dimaslz/ng-heroicons/-/ng-heroicons-0.1.4.tgz#966952571537ff349e75d6a750fbf1294fa8621a"
+  integrity sha512-TiM6I+f1CKkAYZI7Ywj6+Cem/sbjixiKNI1OemMuU+qaTdYOdsuYJNMS9OB6e8TsRoz+ZMAjzmKSb1bZENsQfg==
   dependencies:
     tslib "^2.2.0"
 
@@ -6787,13 +6787,6 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@^4.0.3, is-glob@~4.0.1:
   dependencies:
     is-extglob "^2.1.1"
 
-is-glob@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/is-glob/-/is-glob-4.0.3.tgz#64f61e42cbbb2eec2071a9dac0b28ba1e65d5084"
-  integrity sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==
-  dependencies:
-    is-extglob "^2.1.1"
-
 is-installed-globally@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/is-installed-globally/-/is-installed-globally-0.4.0.tgz#9a0fd407949c30f86eb6959ef1b7994ed0b7b520"
@@ -8458,10 +8451,10 @@ new-github-release-url@1.0.0:
   dependencies:
     type-fest "^0.4.1"
 
-ng-packagr@^12.2.3:
-  version "12.2.3"
-  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-12.2.3.tgz#1597f8e70a78ab88bb395675358942bfc14cbc07"
-  integrity sha512-2KHoglc7UgJMnzkytzZ1wU+IEkb6UrxoU4QZxnF5BSFh9vjUra2nCXH+EKkvxD3WTj0ikXmNIMeNWbwoZpGkgA==
+ng-packagr@^12.2.5:
+  version "12.2.5"
+  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-12.2.5.tgz#94e965102bdeca672e942f9b7b5e203f9abe2262"
+  integrity sha512-iNxX8lgAMNYAfXDBJomD7SeFpG47uoyKkGCWQo78AlFS4q3fGiFEIRrX842MTuASshYVAqMaBkaKPOajPx7VXw==
   dependencies:
     "@rollup/plugin-commonjs" "^20.0.0"
     "@rollup/plugin-json" "^4.1.0"
