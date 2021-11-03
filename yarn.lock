@@ -1301,10 +1301,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@dimaslz/ng-heroicons@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@dimaslz/ng-heroicons/-/ng-heroicons-0.1.2.tgz#1a97c1c4c888db495adaa67c93a726023ab16b07"
-  integrity sha512-PRZ9aewObnenksM7mtqOzMr0nukYxmGISdgVgq+36H7VIAYDmOEMBtFUzGXiT/jXNTrEhD/zkjURDciCK66yFg==
+"@dimaslz/ng-heroicons@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@dimaslz/ng-heroicons/-/ng-heroicons-0.1.4.tgz#966952571537ff349e75d6a750fbf1294fa8621a"
+  integrity sha512-TiM6I+f1CKkAYZI7Ywj6+Cem/sbjixiKNI1OemMuU+qaTdYOdsuYJNMS9OB6e8TsRoz+ZMAjzmKSb1bZENsQfg==
   dependencies:
     tslib "^2.2.0"
 
