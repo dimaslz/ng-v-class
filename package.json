@@ -42,7 +42,7 @@
     "@release-it/bumper": "^3.0.1",
     "@release-it/conventional-changelog": "^3.3.0",
     "@testing-library/angular": "^10.11.0",
-    "@testing-library/user-event": "^13.2.1",
+    "@testing-library/user-event": "^13.5.0",
     "@types/highlight.js": "^10.1.0",
     "@types/jest": "^27.0.2",
     "@types/lodash.isarray": "^4.0.6",
