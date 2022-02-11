@@ -64,7 +64,7 @@
     "jest-preset-angular": "^10.1.0",
     "ng-packagr": "^12.2.5",
     "release-it": "^14.11.5",
-    "tailwindcss": "^2.2.19",
+    "tailwindcss": "^3.0.21",
     "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",
     "typescript": "~4.3.5"
